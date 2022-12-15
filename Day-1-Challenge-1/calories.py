@@ -24,3 +24,9 @@ for i in elves_list:
 
 # print max value in new list! Yummy!
 print('The elf with the most calories is carrying', max(elf_totals), 'calories! Yummy!')
+
+# Print the total of the top 3 elves
+# Sum(sorted(elf_totals, reverse = True)[:3]) broken down
+    # Sort elf totals array highest --> lowest value, then slice the first 3 since those will be the largest
+    # Sum that smaller list of 3 values
+print('The 3 elves with the most calories are carrying', sum(sorted(elf_totals, reverse = True)[:3]), 'calories total! Yummy!')
