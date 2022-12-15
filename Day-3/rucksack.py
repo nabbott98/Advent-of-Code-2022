@@ -22,8 +22,26 @@ for string in split_list:
         priority_sum += ord(common_item) - 96
     else:
         priority_sum += ord(common_item) - 64 + 26
-    print(priority_sum)
 
-print('The total sum of the priorities is', priority_sum)
+# print('The total sum of the priorities is', priority_sum)
 
 # Correct answer for my data 8493! Part 1 Complete!
+
+# Part 2
+group_priority_sum = 0
+
+for i in range(int(len(split_list)/3)):
+    # Find common items between 3 strings
+    a = list(set(split_list[i * 3]) & set(split_list[i * 3 + 1]) & set(split_list[i * 3 + 2]))
+    common_item = a[0]
+
+    # Calculate common item priority and add to running sum
+    # Use ASCII numbers to do quick math, capital letters start at 27 so add 26
+    if common_item.islower():
+        group_priority_sum += ord(common_item) - 96
+    else:
+        group_priority_sum += ord(common_item) - 64 + 26
+
+print('The total sum of the group priorities is', group_priority_sum)
+
+# Correct answer for my data set 2552 Complete!
