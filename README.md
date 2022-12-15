@@ -1,7 +1,7 @@
 # Advent-of-Code-2022 🎄
 ![Advent of Code Cover Image](./advent-of-code-2022.png)
-- [X] Day 1 Challenge 2 
 - [X] Day 1 Challenge 1 
+- [X] Day 1 Challenge 2 
 - [ ] Day 2 Challenge 1 
 - [ ] Day 2 Challenge 2 
 - [ ] Day 3 Challenge 1 
