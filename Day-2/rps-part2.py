@@ -13,17 +13,28 @@ score = 0
 
 for i in split_list:
     # Pull values from string and convert them to int types
-    me = int(i[2])
     opp = int(i[0])
+    # Results 1 = loss 2 = tie 3 = win
+    result = int(i[2])
 
     # Game logic
-    if me == opp:
-        score += 3 + me
-    elif me == 3 and opp == 2 or me == 2 and opp == 1 or me == 1 and opp == 3:
-        score += 6 + me
-    else:
-        score += me
+    if result == 2:
+        score += 3 + opp
+    elif result == 3:
+        play = opp + 1
+        if play > 3:
+            play = 1
 
+        score += 6 + play
+    
+    elif result == 1:
+        play = opp - 1
+        if play < 1:
+            play = 3
+
+        score += play
+
+# Print final score
 print('My final score is', score)
 
-# Answer based on my data is 8392
+# correct answer for my set is 10116, Complete!
