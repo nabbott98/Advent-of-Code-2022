@@ -5,7 +5,7 @@ puzzle_input_txt = open("puzzle-input.txt", "r")
 data = puzzle_input_txt.read()
 puzzle_input_txt.close()
 
-# Replace ABC and XYZ with 123 and split list by newline
+# Split string into list based on newline
 split_list = data.split("\n")
 
 priority_sum = 0
