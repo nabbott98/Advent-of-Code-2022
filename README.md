@@ -7,7 +7,7 @@
 - [X] Day 3 Challenge 1 
 - [X] Day 3 Challenge 2 
 - [X] Day 4 Challenge 1 
-- [ ] Day 4 Challenge 2 
+- [X] Day 4 Challenge 2 
 - [ ] Day 5 Challenge 1 
 - [ ] Day 5 Challenge 2 
 - [ ] Day 6 Challenge 1 
