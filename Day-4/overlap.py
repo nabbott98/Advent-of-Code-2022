@@ -8,8 +8,9 @@ puzzle_input_txt.close()
 # Split string into list based on newline
 sector_list = data.split("\n")
 
-# Define Count Variable
-count = 0
+# Define Count Variables
+full_overlap_count = 0
+any_overlap_count = 0
 
 # Iterate through each pair
 for pair in sector_list:
@@ -22,9 +23,15 @@ for pair in sector_list:
 
     # Test for overlapping
     if l1 <= l2 and h2 <= h1 or l1 >= l2 and h2 >= h1:
-        count += 1
+        full_overlap_count += 1
+
+    if l1 <= l2 and l2 <= h1 or l1 <= h2 and h2 <= h1 or l1 <= l2 and h2 <= h1 or l1 >= l2 and h2 >= h1:
+        any_overlap_count += 1
 
 
-print ('Number of overlapping sectors', count)
+print ('Number of fully overlapping sectors', full_overlap_count)
+# My data set answer is 513, part 1 Complete!
 
-# My data set answer is 513, Complete!
+print ('Number of overlapping sectors of any length', any_overlap_count)
+# My data set answer is 878, part 2 Complete!
+
