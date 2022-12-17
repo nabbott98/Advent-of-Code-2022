@@ -6,7 +6,7 @@ data = puzzle_input_txt.read()
 puzzle_input_txt.close()
 
 # Split string into list based on newline
-sector_list = data.split("\n")
+cargo_list = data.split("\n")
 
 # Define cargo position lists
 # [V]     [B]                     [C]
@@ -33,10 +33,14 @@ cargo = {
 }
 
 
-# Iterate through each pair
-for pair in sector_list:
-    # Split pair string into list of ints
-    int_list = [int(x) for x in pair.replace('-',',').split(',')]
-    num = int_list[0]
-    p1 = int_list[1]
-    p2 = int_list[2]
+print(cargo_list)
+
+# # Iterate through each pair
+# for command in cargo_list:
+#     # Split pair string into list of ints
+#     int_list = [int(x) for x in command.replace('-',',').split(',')]
+#     num = int_list[0]
+#     p1 = int_list[1]
+#     p2 = int_list[2]
+
+# print(int_list)
