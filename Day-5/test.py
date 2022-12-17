@@ -18,8 +18,6 @@ any_overlap_count = 0
 # Iterate through each pair
 for command in sector_list:
     # Split pair string into list of ints
-    int_list = re.findall(r'\d+', command)
-    # num = int_list[0]
-    # p1 = int_list[1]
-    # p2 = int_list[2]
-    print(int_list)
+    # int_list = re.findall(r'\d+', command)
+    int_list = [int(s) for s in command.split() if s.isdigit()]
+    int_list[0]
